@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>All CSS shapes</title>
+
+    <!--Selecting multiple elements  table, td, th, tr at once using ,-->
+    <style>
+
+        table, td, th, tr{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        table{
+            margin: 50px;
+        }
+
+
+        #square{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        #rectangle{
+            background-color: greenyellow;
+            height: 100px;
+            width: 200px;
+        }
+
+        #circle{
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        #oval{
+            background-color: pink;
+            height: 100px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        #parallelogram{
+            background-color: blue;
+            height: 80px;
+            width: 150px;
+            transform: skew(-20deg);
+            margin: 10px;
+        }
+
+        #triangle{
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid purple;
+        }
+
+
+
+        #trapezoid{
+            border-bottom:100px solid cyan ;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+        }
+
+        pre{
+            font-family:monospace ;
+            font-size: 15px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h2>All CSS Shapes!</h2>
+
+    <table>
+        <tr>  <th>Shape Name</th>    <th>   Actual Shape                      </th>  <th>CSS code</th>     </tr>
+        <tr>  <td>Square</td>        <td>   <div id="square">         </div>  </td>   <th><pre>#square{ background-color: red; height: 100px; width: 100px; }</pre></th>  </tr>
+        <tr>  <td>Rectangle</td>     <td>   <div id="rectangle">      </div>  </td>   <th><pre>#rectangle{ background-color: greenyellow; height: 100px; width: 200px; }</pre></th>  </tr>
+        <tr>  <td>Circle</td>        <td>   <div id="circle">         </div>  </td>   <th><pre>#circle{ background-color: orange; height: 100px; width: 100px; border-radius: 50%; }</pre></th>  </tr>
+        <tr>  <td>Oval</td>          <td>   <div id="oval">           </div>  </td>   <th><pre>#oval{ background-color: pink; height: 100px; width: 200px; border-radius: 50%; }</pre></th>  </tr>
+        <tr>  <td>Parallelogram</td> <td>   <div id="parallelogram">  </div>  </td>   <th><pre>#parallelogram{ background-color: blue; height: 80px; width: 150px; transform: skew(-20deg); margin: 10px; }</pre></th>  </tr>
+        <tr>  <td>Triangle</td>      <td>   <div id="triangle">       </div>  </td>   <th><pre>#triangle{ border-left: 100px solid transparent; border-right: 100px solid transparent; border-bottom: 100px solid purple; }</pre></th>  </tr>
+        <tr>  <td>Trapezoid</td>     <td>   <div id="trapezoid">      </div>  </td>   <th><pre>#trapezoid{ border-bottom:100px solid cyan ; border-left: 40px solid transparent; border-right: 40px solid transparent; }</pre></th>  </tr>
+
+
+
+
+
+
+
+
+    </table>
+    
+</body>
+</html>
