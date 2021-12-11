@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3d Rotation</title>
+    <style>
+        *{
+            color: white;
+            border: 1px solid white;
+        }
+        
+        #container{
+            height: 97vh;
+            width: 100%;
+            background-color: black;
+            display: grid;
+            place-items: center;
+            perspective: 700px;
+            perspective-origin: 50% 10%;
+            
+        }
+
+        #box{
+            height: 200px;
+            width: 200px;
+            border-style: none;
+            animation: rotate 8s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+        @keyframes rotate{
+            0%{transform: rotateY(0deg);}
+            100%{transform: rotateY(360deg);}
+        }
+
+        .sides{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            opacity: 0.6;
+        }
+
+        #frontside{
+            background-color: red;
+            transform: translateZ(100px);
+        }
+
+        #backside{
+            background-color: green;
+            transform: translateZ(-100px);
+        }
+
+        #rightside{
+            background-color: gold;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        #leftside{
+            background-color: blue;
+            transform: rotateY(270deg) translateZ(100px);
+        }
+
+        #topside{
+            background-color: gray;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        #bottomside{
+            background-color: fuchsia;
+            transform: rotateX(270deg) translateZ(100px);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="frontside" class="sides">FrontSide</div>
+            <div id="backside" class="sides">BackSide</div>
+            <div id="leftside" class="sides">RightSide</div>
+            <div id="rightside" class="sides">LeftSide</div>
+            <div id="topside" class="sides">TopSide</div>
+            <div id="bottomside" class="sides">BottonSide</div>
+        </div>
+    </div>
+</body>
+</html>
